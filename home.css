@@ -1,0 +1,268 @@
+/*First div*/
+.homeSection{
+    width: 100%;
+    margin: 250px 0;
+}
+
+.homeSection-1 {
+    display: flex;
+}
+
+.desc{
+    display: block;
+    width: 50%;
+    border: 30px;
+}
+
+.logo p{
+    font-size: 30px;
+}
+
+.logo{
+    width: 100%;
+    margin: 0px auto;
+}
+
+.logo img{
+    display: block;
+    width: 100%;
+}
+
+h3{
+    font-size: 50px;
+    text-align: center;
+    color: rgb(88, 114, 40); 
+    font-weight: normal; 
+    line-height: 48px; 
+}
+
+.logo p{
+    font-size: 30px;
+    text-align: center;
+    color: rgb(88, 114, 40);  
+    font-weight: normal;
+    line-height: 40px;
+}
+
+/*Second Div*/
+.homeSection-2{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.visit_garden{
+    width: calc((100% - 30px) / 2);
+}
+
+.visit_garden img{
+    width: 100%;
+}
+
+.desc-2{
+    align-items: center;
+    width: calc((100% - 30px) / 2);
+    margin-left: 30px;
+    display: flex;
+    font-size: 30px;
+    right: 10em;
+}
+
+.desc-2 h3{
+    font-size: 45px;
+    width: 100%;
+}
+
+.desc-2 p{
+    padding: 0 10px;
+    font-size: 30px;
+    text-align: center;
+    color: #7c795d; 
+    font-weight: normal;
+    line-height: 70px;
+}
+
+/*Third*/
+.homeSection-3{
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.desc-3{
+    align-items: center;
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+    display: flex;
+    font-size: 30px;
+    left: 10em;
+}
+
+.desc-3 h3{
+    font-size: 45px;
+}
+
+.desc-3 p{
+    font-size: 30px;
+    text-align: center;
+    color: #7c795d; 
+    font-weight: normal;
+    line-height: 40px;
+}
+
+.restaurant{
+    width: calc((100% - 30px) / 2);
+}
+
+.restaurant img{
+    width: 100%;
+}
+
+.checkItOut{
+    margin: 20px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.checkItOut a:hover{
+    text-decoration: underline;
+}
+
+/*Fourth*/
+.homeSection-4{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.homeSection-4 h3{
+    font-size: 45px;
+}
+
+.promo_plant{
+    display: flex;
+}
+
+.promo_plants img:first-child{
+    margin-right: 20px;
+}
+
+.promo_plants img{
+    width: calc((100% - 30px) / 2);
+}
+
+.showMore{
+    padding: 20px 0px;
+    font-size: 25px;
+    margin-left: 30px;
+}
+
+.showMore a:hover{
+    text-decoration: underline;
+}
+
+.quoteSection{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.plantQuote{
+    margin-left: 150px;
+    width: 60%;
+}
+
+.plantQuote p:first-child{
+    font-family: Garamond;
+    font-size: 40px;
+}
+
+.plantQuote p:nth-child(2){
+    font-family: Helvetica;
+    font-size: 20px;
+    font-variant: small-caps;
+}
+
+.animatedPlant{
+    margin-left: 50px;
+    width: 200px;
+    height: 300px;
+    background-image: url('assets/grow1.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: growingPlant 10s infinite;
+}
+
+@keyframes growingPlant {
+    0% {background-image: url('assets/grow1.jpg');}
+    20% {background-image: url('assets/grow2.jpg');}
+    40% {background-image: url('assets/grow3.jpg');}
+    60% {background-image: url('assets/grow4.jpg');}
+    80% {background-image: url('assets/grow5.jpg');}
+    100% {background-image: url('assets/grow1.jpg');}
+}
+
+.music{
+    display: none;
+}
+
+@media only screen and (max-width: 1024px){
+    .content-wrapper{
+        width: 900px;
+        margin: 200px auto;
+    }
+
+    .desc{
+        width: 100%;
+        margin: 0;
+    }
+
+    /*Font size*/
+    h3{
+        font-size: 35px;
+    }
+
+    .desc div{
+        width: 100%;
+    }
+
+    .logo p{
+        font-size: 20px;
+    }
+
+    .desc p{
+        font-size: 20px;
+    }
+
+    .desc-2 h3{
+        font-size: 35px;
+    }
+
+    .desc-3 h3{
+        font-size: 35px;
+    }
+
+    .homeSection-4 h3{
+        font-size: 35px;
+    }
+
+    .showMore{
+        margin: 20px;
+        font-size: 30px;
+    }
+
+    /*Image*/
+    .visit_garden{
+        width: 100%;
+    }
+
+    .restaurant{
+        width: 100%;
+    }
+
+    .homeSection img{
+        width: 100%;
+    }
+
+    .promo_plants img:first-child{
+        margin-right: 0px;
+        margin-bottom: 50px;
+    }
+}

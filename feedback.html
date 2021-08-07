@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="Go Green" content="Plant,Online,Garden,Restaurant"/>
+        <title>Feedback</title>
+        <link rel="stylesheet" href="feedback.css">
+        <link rel="stylesheet" href="base.css">
+        
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div>
+                <ul>
+                    <li class="logonav">
+                        <a href="index.html"><img src="assets/logo.png" alt="Go Green Logo"></a>
+                    </li>
+                    <li>
+                        <a href="Index.html"><button class="func home">Home</button></a>
+                    </li>
+                    <li>
+                        <a href="aboutUs.html"><button class="func about">About Us</button></a>
+                    </li>
+                    <li>
+                        <a href="shop.html"><button class="func shop">Shop</button></a>
+                    </li>
+                    <li>
+                        <a href="login.html"><button class="func register">Login/Sign Up</button></a>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">More</button>
+                            <div class="dropdown-content">
+                                <a href="restaurant.html">Restaurant</a>
+                                <a href="contactus.html">Contact Us</a>
+                                <a href="faq.html">Frequently Ask Question</a>
+                                <a href="donation.html">Donation</a>
+                                <a href="feedback.html">Feedback</a>
+                            </div>
+                        </div>
+                    </li>
+                   <li class="cart">
+                       <a href="cart.html"> <img  src="assets/favorite-cart.png" alt="Cart"></a>
+                   </li>
+                </ul>
+            </div>
+            </nav>
+        </header>
+
+        <div>
+                <i class="icons" onclick="topFunction()" id="scrollTop"><img src="assets/arrowGreen.jpg" alt="Arrow To Top"></i>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="head">
+                <h1>Feedback</h1>
+                <pre>1. Extremely Bad  2. Very Bad   3. Moderate   4. Very Well   5. Extremely Well</pre>
+            </div>
+
+            <form method="GET" onsubmit="feedback()">
+                <div class="feedback">
+                    <p>1. How is your overall experience with our product?</p><br><br>
+                    <input name="option" id="extremely" value="first" type="radio">
+                    <label for ="extremely">1</label>
+                    <input name="option" id="verywell" value="second" type="radio">
+                    <label for ="verywell">2</label>
+                    <input name="option" id="somewhat" value="third" type="radio">
+                    <label for ="somewhat">3</label>
+                    <input name="option" id="notsowell" value="fourth" type="radio">
+                    <label for ="notsowell">4</label>
+                    <input name="option" id="notatallwell" value="fifth" type="radio" checked>
+                    <label for ="notatallwell">5</label>
+                </div>
+
+                <div class="feedback">
+                    <p>2. Were you satisfied with the services provided for you?</p><br><br>
+                    <input name="rate" id="one" value="first" type="radio">
+                    <label for ="one">1</label>
+                    <input name="rate" id="two" value="second" type="radio">
+                    <label for ="two">2</label>
+                    <input name="rate" id="three" value="third" type="radio">
+                    <label for ="three">3</label>
+                    <input name="rate" id="four" value="fourth" type="radio">
+                    <label for ="four">4</label>
+                    <input name="rate" id="five" value="fifth" type="radio" checked>
+                    <label for ="five">5</label>
+                </div>
+
+                <div class="feedback">
+                    <p>3. How did you know about Go Green?</p><br><br>
+                    <input name="time" id="a" value="first" type="radio" checked>
+                    <label for ="a">Social Media</label>
+                    <input name="time" id="b" value="second" type="radio">
+                    <label for ="b">Web Site</label>
+                    <input name="time" id="c" value="third" type="radio">
+                    <label for ="c">Family/Friends</label>
+                    <input name="time" id="d" value="fourth" type="radio">
+                    <label for ="d">Ads</label>
+                    <input name="time" id="e" value="fifth" type="radio">
+                    <label for ="e">Others</label>
+                </div>
+
+                <div class="feedback">
+                    <p>4. How likely would you promote our company to a family member or friend?</p><br><br>
+                    <input name="likely" id="q" value="first" type="radio">
+                    <label for ="q">1</label>
+                    <input name="likely" id="w" value="second" type="radio">
+                    <label for ="w">2</label>
+                    <input name="likely" id="y" value="third" type="radio">
+                    <label for ="y">3</label>
+                    <input name="likely" id="r" value="fourth" type="radio">
+                    <label for ="r">4</label>
+                    <input name="likely" id="t" value="fifth" type="radio" checked>
+                    <label for ="t">5</label>
+                </div>
+
+                <div class="feedback">
+                    <p>Comments & Recommendations (Optional)</p><br>
+                    <textarea name="comment" id="comment" cols="50" rows="10" placeholder="Please Enter Your Comments Here."></textarea><br>
+                    <input type="submit" value="Submit" class="submit">
+                </div> 
+            </form>
+        </div>
+        <script src="base.js"></script>
+    </body>
+        
+        <footer>
+            <div class="col1">
+                <div class="location">
+                    <h4>Location</h4>
+                    <a href="location.html">Malaysia, 39000 Tanah Rata, Pahang</a>
+                    <h4>Facebook</h4>
+                    <a href="http://www.facebook.com">Go Green</a>
+                    <h4>Instagram</h4>
+                    <a href="http://www.instagram.com">Go Green</a>
+                </div>
+            </div>
+        </footer>
+        </html>

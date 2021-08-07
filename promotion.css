@@ -1,0 +1,43 @@
+.title h3{
+    color: rgb(88, 114, 40);
+    font-size: 40px;
+    text-align: center;
+}
+
+.promoItem p{
+    font-size: 20px;
+    color: #7c795d;
+
+}
+
+.promoMenu{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.promo{
+    margin-top: 100px;
+}
+
+.promoItem{
+    width: calc((100% - (50px*2)) / 3);
+    box-sizing: border-box;
+    margin-left: 50px;
+    margin-bottom: 100px;
+}
+
+.promoItem:nth-child(3n+1){
+    margin-left: 0;
+}
+
+.promoPho img{
+    width: 100%;
+}
+
+.link{
+    font-size: 25px;
+}
+
+.link :hover{
+    text-decoration: underline;
+}

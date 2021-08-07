@@ -1,0 +1,24 @@
+.map h1{
+    font-size: 40px;
+    color: rgb(88, 114, 40);
+    text-align: center;
+}
+
+.map img{
+    display: block;
+    margin: 50px auto;
+}
+
+.right{
+    font-size: 30px;
+    color: #7c795d;
+    text-align: center;
+}
+
+.location img{
+    width: 1000px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+

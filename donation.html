@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="Go Green" content="Plant,Online,Garden,Restaurant"/>
+        <title>Donation</title>
+        <link rel="stylesheet" href="donation.css">
+        <link rel="stylesheet" href="base.css">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div>
+                <ul>
+                    <li class="logonav">
+                        <a href="index.html"><img src="assets/logo.png" alt="Go Green Logo"></a>
+                    </li>
+                    <li>
+                        <a href="Index.html"><button class="func home">Home</button></a>
+                    </li>
+                    <li>
+                        <a href="aboutUs.html"><button class="func about">About Us</button></a>
+                    </li>
+                    <li>
+                        <a href="shop.html"><button class="func shop">Shop</button></a>
+                    </li>
+                    <li>
+                        <a href="login.html"><button class="func register">Login/Sign Up</button></a>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">More</button>
+                            <div class="dropdown-content">
+                                <a href="restaurant.html">Restaurant</a>
+                                <a href="contactus.html">Contact Us</a>
+                                <a href="faq.html">Frequently Ask Question</a>
+                                <a href="donation.html">Donation</a>
+                                <a href="feedback.html">Feedback</a>
+                            </div>
+                        </div>
+                    </li>
+                   <li class="cart">
+                       <a href="cart.html"> <img  src="assets/favorite-cart.png" alt="Cart"></a>
+                   </li>
+                </ul>
+            </div>
+            </nav>
+        </header>
+
+        <div>
+                <i class="icons" onclick="topFunction()" id="scrollTop"><img src="assets/arrowGreen.jpg" alt="Arrow To Top"></i>
+        </div>
+        
+        <div class="content-wrapper">
+            <div class="descrip">
+                <h3>Donation for Plants</h3>
+                <p>As of the year 2016, GO GREEN has managed to raise thousands of ringgit through extra incomes and profits to plant more plants and trees for a better environment.<br>In the year 2017, the company decided to introduce to a donation page. The goal is to recieve donations and use the money to organise campaigns that encourages people to plant trees. Not only that, money collected will also be used to help for the poor in terms of food and clothing.</p>
+            </div>
+
+            <form method="GET" onsubmit="submited()">
+
+                <div class="amount donat">
+                    <h3>Select An Amount</h3>
+                        <input type="button" id="add" onclick="myFunction(this.value)" value="50">
+                        <input type="button" id="add" onclick="myFunction(this.value)" value="100">
+                        <input type="button" id="add" onclick="myFunction(this.value)" value="150">
+                        <input type="button" id="add" onclick="myFunction(this.value)" value="500">
+                        <input type="button" id="add" onclick="myFunction(this.value)" value="Other"><br><br>
+                        <label for="donate">Your Donation:(RM)</label>
+                        <input type="number" id="amount" min="1" required><br>
+                        <input type="radio" name="option" id="one" value="One Time" checked >
+                        <label for="one">One Time</label>
+                        <input type="radio" name="option" id="month" value="Monthly">
+                        <label for="month">Monthly</label>
+                </div>
+
+                <div class="information donat">
+                    <h3>Your Information</h3>
+                    <label for="name">Full Name</label><br><br>
+                    <input type="text" id="name" name="name" placeholder="John M. Doe" pattern="[a-zA-Z0-9\s]+" required><br><br>
+
+                    <label for="ic">I.C./Passport No.</label><br><br>
+                    <input type="text" id="ic" name="ic" placeholder="Eg.2425372162" maxlength="12" required pattern="[a-zA-Z0-9\s]+"><br><br>
+
+                    <label for="email">Email</label><br><br>
+                    <input type="email" name="email" id="email" placeholder="john@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br><br>
+
+                    <label for="phone">Phone</label><br><br>
+                    <input type="tel" name="phone" id="phone" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" maxlength="10"><br><br>
+
+                    <label for="comment">Leave a comment</label><br><br>
+                    <textarea name="comment" id="comment" cols="60" rows="3"></textarea>
+                </div>
+
+                <div class="payment donat">
+                    <h3>Payment Details</h3>
+                    <label for="card">Card Number</label><br><br>
+                    <input type="text" name="card" id="name" required min="1" placeholder="No Dash" pattern="[0-9]{13,16}">
+                    <span class="validity"></span><br><br>
+                    <label for="expiryDate">Expiry Date (mm/yy)</label><br><br>
+                    <input type="number" name="expiryDate" id="expiryDate" min="1" max="12" placeholder="Month" required>
+                    <input type="number" name="expiryDate" id="expiryDate" min="1" placeholder="Year" required><br><br>
+                    <label for="cvv">CVV</label><br><br>
+                    <input type="number" name="cvv" id="cvv" placeholder="CVV/CVV2" required><br><br>
+                </div>
+
+                <div class="success donat">
+                    <input type="submit" value="Success" class="btn">
+                </div>
+            </form>
+        </div>
+        <script src="donation.js"></script>
+    </body>
+
+        <footer>
+            <div class="col1">
+                <div class="location">
+                    <h4>Location</h4>
+                    <a href="location.html">Malaysia, 39000 Tanah Rata, Pahang</a>
+                    <h4>Facebook</h4>
+                    <a href="http://www.facebook.com">Go Green</a>
+                    <h4>Instagram</h4>
+                    <a href="http://www.instagram.com">Go Green</a>
+                </div>
+            </div>
+        </footer>
+</html>

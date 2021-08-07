@@ -1,0 +1,44 @@
+.title h3{
+    color: rgb(88, 114, 40);
+    font-size: 40px;
+    text-align: center;
+}
+
+.plantsItem p{
+    font-size: 20px;
+    color: #7c795d;
+}
+
+.plantsMenu{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.plants{
+    margin-top: 100px;
+}
+
+.plantsItem{
+    width: calc((100% - (50px*2)) / 3);
+    box-sizing: border-box;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.plantsItem:nth-child(3n+1){
+    margin-left: 0;
+}
+
+.plantsPho img{
+    width: 100%;
+}
+
+.link{
+    font-size: 25px;
+}
+
+.link :hover{
+    text-decoration: underline;
+}
+
+

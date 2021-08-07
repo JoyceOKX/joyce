@@ -1,0 +1,58 @@
+.shopMenu h4{
+    margin-top: 250px ;
+    font-size: 30px;
+    color: rgb(88, 114, 40);
+    text-align: center;
+}
+
+.item p{
+    font-size: 30px;
+    color: #7c795d;
+}
+
+.things{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shopItem{
+    margin-top: 100px;
+}
+
+.item{
+    width: calc((100% - (50px*2)) / 3);
+    box-sizing: border-box;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.item:nth-child(3n+1){
+    margin-left: 0;
+}
+
+.shopho img{
+    width: 100%;
+}
+
+.link{
+    font-size: 25px;
+    text-align: center;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+
+.promoMenu{
+    margin-bottom: 200px;
+}
+
+@media only screen and (max-width: 1024px){
+    .item p{
+        font-size: 25px;
+    }
+
+    .link{
+        font-size: 20px;
+    }
+}

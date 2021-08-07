@@ -1,0 +1,105 @@
+.au{
+    text-align: center;
+    color: #7c795d; 
+}
+
+.au h3, .au h4, .au h5{
+    font-weight: normal;
+}
+
+.au h5 {
+    font-size: 30px;
+}
+
+.au p{
+    line-height: 50px;
+    font-size: 22px;
+}
+
+.heading{
+    color: rgb(88, 114, 40); 
+    font-size: 50px;
+}
+
+.intro, .subIntro{
+    margin-bottom: 200px;
+}
+
+.table{
+    width: 100%;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+}
+
+.enter th{
+    color: rgb(88, 114, 40);
+    font-size: 25px;
+}
+
+.main th{
+    color: rgb(88, 114, 40);
+    font-size: 25px;
+    padding-top: 50px;
+    padding-left: 80px;
+}
+
+td{
+    font-size: 20px;
+    color: #7c795d;
+    padding-left: 80px;
+}
+
+.aboutpic{
+    width: 60%;
+    margin: 0px auto 150px auto;
+}
+
+.aboutpic img{
+    width: 100%;
+}
+
+.plants{
+    width: 100%;
+}
+
+.sub{
+    color: rgb(88, 114, 40);
+    font-size: 45px;
+    margin-top: 80px;
+}
+
+.place3{
+    text-align: center;
+}
+
+.aboutUsLink{
+    margin: 20px;
+    font-size: 25px;
+}
+
+.aboutUsLink:hover{
+    text-decoration: underline;
+}
+
+.aboutpic p{
+    color: #7c795d; 
+    font-size: 30px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1024px){
+    .au{
+        font-size: 20px;
+    }
+
+    .heading{
+        font-size: 30px;
+    }
+
+    .sub{
+        font-size: 30px;
+    }
+}

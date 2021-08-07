@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="Go Green" content="Plant,Online,Garden,Restaurant"/>
+        <title>Login/Sign Up</title>
+        <link rel="stylesheet" href="login.css">
+        <link rel="stylesheet" href="base.css">
+        
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div>
+                <ul>
+                    <li class="logonav">
+                        <a href="index.html"><img src="assets/logo.png" alt="Go Green Logo"></a>
+                    </li>
+                    <li>
+                        <a href="Index.html"><button class="func home">Home</button></a>
+                    </li>
+                    <li>
+                        <a href="aboutUs.html"><button class="func about">About Us</button></a>
+                    </li>
+                    <li>
+                        <a href="shop.html"><button class="func shop">Shop</button></a>
+                    </li>
+                    <li>
+                        <a href="login.html"><button class="func register">Login/Sign Up</button></a>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">More</button>
+                            <div class="dropdown-content">
+                                <a href="restaurant.html">Restaurant</a>
+                                <a href="contactus.html">Contact Us</a>
+                                <a href="faq.html">Frequently Ask Question</a>
+                                <a href="donation.html">Donation</a>
+                                <a href="feedback.html">Feedback</a>
+                            </div>
+                        </div>
+                    </li>
+                   <li class="cart">
+                       <a href="cart.html"> <img  src="assets/favorite-cart.png" alt="Cart"></a>
+                   </li>
+                </ul>
+            </div>
+            </nav>
+        </header>
+
+        <div>
+                <i class="icons" onclick="topFunction()" id="scrollTop"><img src="assets/arrowGreen.jpg" alt="Arrow To Top"></i>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="form-box">
+                <div class="formLogo">             
+                    <img src="assets/logo.png" alt="Go Green Logo">
+                </div>
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn toggle-btn-login" id="loginBtn" onclick="login()">Log In</button>
+                    <button type="button" class="toggle-btn toggle-btn-register" id="regBtn" onclick="register()">Register</button>
+                </div>
+
+            <form id="loginForm" class="input-group" onsubmit="loginSuccess()">
+                <input type="text" class="input-field" placeholder="User ID"
+                required>
+                <input type="password" class="input-field" placeholder="Enter Password"
+                required>
+                <input type="checkbox" class="check-box" id="rmbMe">
+                <label for="rmbMe"> Remember Password</label>
+                <button type="submit" class="submit-btn">Log in</button>
+            </form>
+            <form id="registerForm" class="input-group" onsubmit="loginSuccess()">
+                <input type="text" class="input-field" placeholder="User ID" required>
+                <input type="email" class="input-field" placeholder="Email Address" required>
+                <input type="password" class="input-field" placeholder="Enter Password" id="myInput" required></br></br></br>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+            </div>
+        </div>
+        <script src="base.js"></script>
+    </body>
+</html>
